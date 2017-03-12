@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title>速缘</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="logon/css/logon.css">
+        <link rel="stylesheet" href="find/css/find.css">
+        <link rel="stylesheet" href="linkman/css/linkman.css">
+        <link rel="stylesheet" href="mine/css/mine.css">
+        <script type="text/javascript">
+            var a=document.documentElement.clientWidth/7.2;
+            document.documentElement.style.fontSize=a+'px';
+        </script>
+        <script data-main="js/main.js" src="js/require.js"></script>
+
+    </head>
+    <body>
+        <div class="index_header">
+            <span class="index_title">速缘</span>
+            <span class="index_register">注册</span>
+        </div>
+        <div ng-view></div>
+        <div class="index_footer" >
+            <ul class="index_footer_list">
+                <a href="#/linkman">
+                    <li>
+                        <img src="img/linkman.png" alt="">
+                        <p>联系人</p>
+                    </li>
+                </a>
+                <a href="#/find">
+                    <li>
+                        <img src="img/find.png" alt="">
+                        <p>发现</p>
+                    </li>
+                </a>
+                <a href="#/mine">
+                    <li>
+                        <img src="img/mine.png" alt="">
+                        <p>个人中心</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </body>
+</html>
